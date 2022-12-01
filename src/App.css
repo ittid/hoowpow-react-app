@@ -1,0 +1,234 @@
+.brand div > img {
+  max-width: 65%;
+  cursor: pointer;
+}
+.title a img {
+  max-width: 90%;
+}
+.char {
+  position: relative;
+  bottom: -35px;
+  left: 50px;
+  margin: 0;
+}
+.login {
+  font-weight: 700;
+  position: absolute;
+  top: 60%;
+  right: 49%;
+  margin: 0;
+}
+.page {
+  display: grid;
+  grid-template-columns: 25vw auto;
+}
+.main {
+  grid-column-start: 2;
+}
+/* dropdown menu styles */
+.dropdown {
+  position: relative;
+}
+.menu {
+  background-color: #fff;
+  position: absolute;
+  list-style-type: none;
+  margin: 1em 0;
+  padding: 1.5em 0;
+  width: 23vw;
+  left: -2vw;
+  z-index: 9999;
+  border-radius: 23px;
+}
+.menu > li {
+  margin: 0;
+  text-align: center;
+}
+.menu li a {
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #dddddd;
+  color: #434343;
+  display: block;
+  width: 90%;
+  margin: 1em auto;
+  padding: 0.4em 0;
+  border-radius: 23px;
+}
+.menu li a:hover {
+  background-color: #484848;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.menu hr {
+  width: 90%;
+  background-color: #ddd;
+  height: 1px;
+  border: 0;
+}
+.menu .s_media {
+  width: 80%;
+  margin: auto;
+}
+.menu .s_media p {
+  color: #434343;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+.menu .s_media p span {
+  margin-left: 1em;
+  font-size: 16px;
+}
+/* content */
+.main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em 2em;
+  margin: 3em 4em 2em 2em;
+  overflow: scroll;
+  height: 100vh;
+}
+.main article {
+  cursor: pointer;
+}
+.main article figure {
+  margin: 0;
+  text-align: center;
+}
+.main article figure figcaption span {
+  font-weight: 700;
+  color: #808080;
+  font-size: 15px;
+}
+.main article figure figcaption .title {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  margin: 0;
+  padding-left: 7px;
+}
+/* background svg image */
+.svg_background {
+  position: fixed;
+  top: -6%;
+  right: -27%;
+  z-index: -99999;
+}
+.svg_background img {
+  background-attachment: fixed;
+}
+/* fullscreen style */
+a > .fullscreen,
+a > .accueil {
+  color: #fff;
+}
+a:hover > .fullscreen,
+a:hover > .accueil {
+  color: #ddd;
+  border: 3px solid #ddd;
+}
+.fullscreen,
+.accueil {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 3px solid #fff;
+  border-radius: 2em;
+  width: 75%;
+  margin: 1.5em auto;
+  padding: 8px 0;
+}
+.fullscreen span,
+.accueil span {
+  text-transform: uppercase;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fullscreen img,
+.accueil img {
+  width: 100px;
+  height: 30px;
+}
+.partager {
+  text-align: center;
+  margin-bottom: 3.5em;
+}
+.partager p {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 7px 0 0;
+  font-size: 1.2em;
+}
+.partager .icon img {
+  height: 45px;
+}
+/* sidebar_preview */
+figure.sidebar_preview {
+  margin: 3em 1em;
+}
+figure.sidebar_preview h2 {
+  margin: 0;
+  text-align: center;
+  text-transform: lowercase;
+}
+/* View page styles */
+.view_page {
+  grid-column-start: 2;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: minmax(100px, auto);
+}
+.baner {
+  grid-column: 9/13;
+}
+.view_intro {
+  background-color: rgb(81, 170, 188);
+  text-align: center;
+  border-radius: 0 0 0 7px;
+  margin: 0;
+  padding: 1em 0px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+/* FetchSlider Styles */
+.slick-slider {
+  height: auto;
+  max-width: 630px;
+  grid-column: 3/13;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-size: 40px !important;
+}
+.slick-prev {
+  left: -45px !important;
+}
+.slick-dots li button:before {
+  font-size: 20px !important;
+  color: #fff !important;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 1 !important;
+}
+/* right bar */
+.rightBar {
+  /*   grid-column: 10/13;
+  background: transparent;
+  padding: 0 2em;
+  height: 500px;
+  overflow: scroll; */
+
+  background: transparent;
+  padding: 0 2em;
+  height: 650px;
+  width: 200px;
+  overflow: scroll;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 6.25em;
+}
